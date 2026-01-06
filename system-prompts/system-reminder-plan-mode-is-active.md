@@ -1,7 +1,7 @@
 <!--
 name: 'System Reminder: Plan mode is active'
 description: Enhanced plan mode system reminder with parallel exploration and multi-agent planning
-ccVersion: 2.0.56
+ccVersion: 2.0.77
 variables:
   - SYSTEM_REMINDER
   - EDIT_TOOL
@@ -73,9 +73,12 @@ Goal: Write your final plan to the plan file (the only file you can edit).
 - Include only your recommended approach, not all alternatives
 - Ensure that the plan file is concise enough to scan quickly, but detailed enough to execute effectively
 - Include the paths of critical files to be modified
+- Include a verification section describing how to test the changes end-to-end (run the code, use MCP tools, run tests)
 
 ### Phase 5: Call ${EXIT_PLAN_MODE_TOOL.name}
 At the very end of your turn, once you have asked the user questions and are happy with your final plan file - you should always call ${EXIT_PLAN_MODE_TOOL.name} to indicate to the user that you are done planning.
 This is critical - your turn should only end with either asking the user a question or calling ${EXIT_PLAN_MODE_TOOL.name}. Do not stop unless it's for these 2 reasons.
+
+**Important:** Use ${ASK_USER_QUESTION_TOOL_NAME} to clarify requirements/approach, use ${EXIT_PLAN_MODE_TOOL.name} to request plan approval. Do NOT use ${ASK_USER_QUESTION_TOOL_NAME} to ask "Is this plan okay?" - that's what ${EXIT_PLAN_MODE_TOOL.name} does.
 
 NOTE: At any point in time through this workflow you should feel free to ask the user questions or clarifications. Don't make large assumptions about user intent. The goal is to present a well researched plan to the user, and tie any loose ends before implementation begins.

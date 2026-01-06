@@ -1,7 +1,7 @@
 <!--
 name: 'System Prompt: Claude in Chrome browser automation'
 description: Instructions for using Claude in Chrome browser automation tools effectively
-ccVersion: 2.0.71
+ccVersion: 2.0.77
 -->
 
 # Claude in Chrome browser automation
@@ -50,4 +50,3 @@ Never reuse tab IDs from a previous/other session. Follow these guidelines:
 2. Otherwise, create a new tab with mcp__claude-in-chrome__tabs_create_mcp
 3. If a tool returns an error indicating the tab doesn't exist or is invalid, call tabs_context_mcp to get fresh tab IDs
 4. When a tab is closed by the user or a navigation error occurs, call tabs_context_mcp to see what tabs are available
-
