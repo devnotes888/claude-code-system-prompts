@@ -4,6 +4,13 @@ Note: Only use **NEW:** for entirely new prompt files, NOT for new additions/sec
 
 ### Claude Code System Prompts Changelog
 
+# [2.1.5](https://github.com/Piebald-AI/claude-code-system-prompts/commit/701b0e2)
+
+_-24 tokens_
+
+- Tool Description: Bash - replaced `GIT_COMMIT_AND_PR_CREATION_INSTRUCTION` variable with `BASH_TOOL_NAME` variable in metadata
+- Tool Description: Task - reordered variable declarations, moving `IS_TRUTHY_FN` and `PROCESS_OBJECT` earlier in the list
+
 # [2.1.4](https://github.com/Piebald-AI/claude-code-system-prompts/commit/42537cb)
 
 _-19 tokens_
