@@ -4,6 +4,14 @@ Note: Only use **NEW:** for entirely new prompt files, NOT for new additions/sec
 
 ### Claude Code System Prompts Changelog
 
+# [2.1.21](https://github.com/Piebald-AI/claude-code-system-prompts/commit/51239d3)
+
+_+442 tokens_
+
+- **NEW:** System Prompt: Accessing past sessions - Instructions for searching past session data including memory summaries and transcript logs
+- Tool Description: TeammateTool - Added guidance to prefer tasks in ID order (lowest ID first) when multiple tasks are available, as earlier tasks often set up context for later ones
+
+
 # [2.1.20](https://github.com/Piebald-AI/claude-code-system-prompts/commit/18fd5f9)
 
 _-1,928 tokens_
